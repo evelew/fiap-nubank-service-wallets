@@ -2,10 +2,12 @@ const db = require('./_db')
 
 const createNew = async (data) => {
   const Wallet = db.Mongoose.model('wallets', db.WalletsSchema, 'wallets')
+  const { name, cdi, due_date, value } = data
   const newWallet = new Wallet({
-    name: data.name,
-    cdi: data.cdi,
-    vencimento: data.vencimento,
+    name,
+    cdi,
+    due_date,
+    value,
   })
 
   return newWallet

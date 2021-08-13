@@ -6,7 +6,8 @@ const walletsSchema = new mongoose.Schema(
   {
     name: String,
     cdi: String,
-    vencimento: String,
+    dua_date: String,
+    value: Number,
   },
   { collection: 'wallets' }
 )
