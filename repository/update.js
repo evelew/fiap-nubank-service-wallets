@@ -1,15 +1,9 @@
 const db = require('./_db')
 
-const createNew = async (data) => {
+const createNew = async ({ _id, value, name }) => {
   const Wallet = db.Mongoose.model('wallets', db.WalletsSchema, 'wallets')
-  const { _id, value } = data
 
-  const wallet = await Wallet.findOne({ _id }).exec()
-  const { value: currentValue, name } = wallet
-
-  const total = Number(currentValue) + Number(value)
-
-  await Wallet.updateOne({ _id }, { value: total })
+  await Wallet.updateOne({ _id }, { value })
 
   return `Dinheiro guardado na carteira "${name}"!`
 }
