@@ -5,12 +5,19 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.17.1",
+    "module-alias": "^2.2.2",
     "mongoose": "^5.13.7"
   },
   "devDependencies": {},
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "_moduleAliases": {
+    "@services": "services",
+    "@controller": "controller",
+    "@repository": "repository",
+    "@db": "_db"
   },
   "repository": {
     "type": "git",
