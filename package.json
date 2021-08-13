@@ -1,0 +1,23 @@
+{
+  "name": "fiap-nubank-service-wallets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evelew/fiap-nubank-service-wallets.git"
+  },
+  "author": "Evellyn Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evelew/fiap-nubank-service-wallets/issues"
+  },
+  "homepage": "https://github.com/evelew/fiap-nubank-service-wallets#readme"
+}
