@@ -1,8 +1,6 @@
-require('module-alias/register')
-
-const getAll = require('@services/get-all')
-const createNew = require('@services/create-new')
-const update = require('@services/update')
+const getAll = require('./../services/get-all')
+const createNew = require('./../services/create-new')
+const update = require('./../services/update')
 
 module.exports = (express) => {
   let api = express.Router()

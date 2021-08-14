@@ -1,10 +1,8 @@
-require('module-alias/register')
-
 const express = require('express')
 const app = express()
 const port = 3000
 
-const controller = require('@controller')(express)
+const controller = require('./controller')(express)
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))

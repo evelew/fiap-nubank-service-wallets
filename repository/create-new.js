@@ -1,5 +1,4 @@
-require('module-alias/register')
-const db = require('@db')
+const db = require('./../_db')
 
 const createNew = async (data) => {
   const Wallet = db.Mongoose.model('wallets', db.WalletsSchema, 'wallets')
