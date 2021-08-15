@@ -8,7 +8,10 @@ const controller = require('./controller')(express)
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.use(cors())
+app.use(cors({
+  origin: 'http://localhost:8100',
+  methods: 'GET, PUT, POST'
+}))
 
 app.use('/', controller)
 
