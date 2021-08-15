@@ -1,5 +1,4 @@
-require('module-alias/register')
-const getAll = require('@repository/get-all')
+const getAll = require('./../repository/get-all')
 
 module.exports = async () => {
   const wallets = await getAll()

@@ -1,6 +1,5 @@
-require('module-alias/register')
-const update = require('@repository/update')
-const get = require('@repository/get')
+const update = require('./../repository/update')
+const get = require('./../repository/get')
 
 module.exports = async (body) => {
   const { _id } = body
