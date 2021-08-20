@@ -1,5 +1,5 @@
 ## Stack
-Projeto desenvolvido com Node.js.
+Projeto desenvolvido com Node.js + express + mongoose.
 
 ## Objetivo
 
